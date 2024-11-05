@@ -1,0 +1,18 @@
+Área de Preparación (Staging Area) en Git
+El área de preparación (o staging area) es donde Git guarda los cambios que estás por confirmar (commit). En esta etapa, puedes decidir qué cambios incluir en el siguiente commit, permitiéndote tener un control más fino sobre lo que se guarda en el repositorio. Solo los archivos que se agregan al área de preparación se incluirán en el commit cuando lo realices, lo que te da la flexibilidad de trabajar en diferentes partes del proyecto y hacer commits independientes
+
+comandos:
+    $ git add .
+        //guarda todos los cambios de los archuivos en el area de preparacion (si no existen los guarda)
+
+    $ git add archivo.txt
+        //guarda un archivo especifico en el area de preparacion
+
+    $ rm archivo.txt
+        //elimina un archivo especifico
+
+    $ git status
+        //Comprueba el area de preparacion (mostrando los datos guardados, los modificado y los que falta)
+
+    $ git status -s
+        //Es lo mismo que el $ git status, pero lo muestra de una forma mas agradable

@@ -1,0 +1,17 @@
+configuracion de Git
+Estos son algunos de los comandos que puedes utilizar para configurar Git, tanto a nivel global como local. Configurar Git adecuadamente te permite definir aspectos esenciales, como tu nombre de usuario y correo electrónico, el estilo de finalización de línea, y tus preferencias para el editor predeterminado. Las configuraciones globales se aplican a todos los proyectos en tu máquina, mientras que las configuraciones locales solo afectan al repositorio en el que te encuentras trabajando.
+
+
+comandos:
+    $ git --global user.name "Saul Torres" -----------|
+                                                    |---- //son los datos del usuario (user), que seran utilizados en todos los repositorios y neesarios si se vincula con un repositorio remoto
+    $ git --global user.email "prueba@gmail.com"  ----|
+
+    $ git config --global core.abbrev 5
+        //cambia la longitud del id de los commit
+
+    $ git config --list
+        //muestra un listado de todos los datos de configuracion(en este caso GLOBAL)
+
+    $ git config --global core.editor "code --wait"
+        //solo se actualiza el archivo cuando se cierra el visual y coloca como editor predeterminado el vscode

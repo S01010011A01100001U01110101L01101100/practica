@@ -1,0 +1,21 @@
+Ramas en GIT
+Las ramas en Git permiten desarrollar, probar y modificar el código de forma aislada sin afectar la rama principal (normalmente llamada main o master). Las ramas se utilizan para crear copias del proyecto en las que se pueden hacer cambios sin riesgo de alterar el código base. Esto es especialmente útil en proyectos colaborativos o al probar nuevas características. Una vez que los cambios en una rama son satisfactorios, la rama puede fusionarse (merge) con la rama principal para integrar los cambios. Git facilita la creación, visualización y gestión de ramas con varios comandos útiles.
+
+
+comandos:
+    $ git branch 
+        //Verifica las ramas del repositorio
+
+    $ git branch modificar-dev
+        //Crea una nueva rama llamada modificar
+
+    $ git checkout master 
+        //Sirve para navegar entre ramas, pero no es recomendable
+    $ git switch master 
+        //Switch es creado especificamente creado para moverse entre ramas
+
+    $ git branch -d nombre-rama
+        //Elimina la rama nombre-rama si ya no se necesita. Solo se puede eliminar si la rama ha sido fusionada con la principal o con otra rama.
+
+    $ git branch -D nombre-rama
+        //Elimina la rama nombre-rama de forma forzada, incluso si contiene cambios no fusionados.

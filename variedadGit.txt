@@ -1,0 +1,30 @@
+Comando de utilidad GIT
+
+En Git, existen una serie de comandos que permiten realizar diversas operaciones que no se limitan a la gestión del área de preparación o los commits, sino que abordan tareas generales de manejo de archivos y otras funcionalidades del entorno de desarrollo.
+
+
+comandos:
+    $ git init 
+        //inicializa un repositorio en una carpeta
+
+    $ touch nuevo.txt
+        //crea un nuevo archivo llamado nuevo.txt
+
+    $ touch archivo1.txt archivo2.txt archivo3.txt  
+        //Crea varios nuevos archivos 
+
+    $ git mv archivo.txt archivoB.txt
+        //cambia el nombre del archivo de "archivo.txt" al nombre "archivoB.txt"
+
+    $ git mv archivo.txt ruta/archivo.txt
+        //mueve el archivo a otra ruta
+
+    $ git rm archivo.txt
+        //elimina un archivo
+
+    $ code .
+        //abre el vscode de ese repositorio 
+
+
+NT: 
+  -Para guardar todos los cambios, se utilizan git add

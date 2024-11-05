@@ -1,0 +1,43 @@
+Commit en GIT 
+Un commit es un punto de guardado en el historial de un proyecto en Git. Al realizar un commit, estás registrando el estado actual de los archivos y los cambios en el repositorio, creando un historial que permite volver a versiones anteriores o comparar cambios entre versiones. Cada commit tiene un mensaje asociado que describe los cambios realizados, facilitando la comprensión del historial del proyecto y el trabajo en equipo. Los commits son identificados de manera única mediante un hash, que permite hacer referencia a ellos de forma precisa.
+
+comandos:
+    $ git commit
+        //envia los datos de preparacion al repositorio
+
+    $ git commit -m "Se coloca texto"
+        //es un commit, pero al agregarle "-m" deja agregar un texto que explica las acciones enviados al repositorio
+
+    $ git log --name-only
+        // ve el historial completo en formato de un arbol
+
+    $ git log 
+        //muestra todo los commit enviado
+
+    $ git log --oneline
+        //Es como "git log", pero muestra los datos en un farmato mas reducido
+
+    $ git log -p -- archivo.txt
+        // Muestras todos los datos de un archivo, su ultima modificacion, el commit en el que esta guardado, muestra son los datos del archivo en el commit
+
+    $ git diff --staged
+        // Compara lo de commit con el repositorio (rojo en el commit, verde el area de preparacion)
+
+    $ git diff 44444 55555
+        // Muestra los dos commit y sus diferencias 
+
+    $ git diff --name-only 44444 55555
+        //Muestra los cambios de los 2 commit (archivos que se modificaron o son diferentes)
+
+    $ git diff --word-diff 44444 55555
+        //Muestra mas detallado los cambios de los dos commit (hasta en codigo)
+
+    $ git commit --amend 
+        //Abre la configuracion del ultimo commit, pudiendo modificarlo
+
+    $ git reset --soft 45a55 (id del commit)
+        //se va al commit de ese id y los commit credos despues, se eliminan
+
+    $ git reset --soft head-1 (numero)
+        //retrosede los commit, la cantidad de veces que el numero y los creados despues se eliminan
+
